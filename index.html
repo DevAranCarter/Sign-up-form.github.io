@@ -12,20 +12,37 @@
             <img class="img" src="./Resources/signUp.jpg">
         </div>
         <div class="right-side">
-            <h1>Welcome to sdskdj</h1>
-            <div id="left-form">
-                <form>
+            <div class="heading">
+            <h1 class="title">Welcome to sdskdj</h1>
+            </div>
+
+                <form class="form">
+                    <div class="split">
                     <label for="first_name"> First Name: </label>
                     <input type="text" id="first_name">
-                </form>
-            <div id="right-form">
-                <form>
-                    <label for="surnamed"> Surname: </label>
+
+                    <label for="email"> Email: </label>
+                    <input type="email" id="email">
+
+                    <label for="set-password"> Password: </label>
+                    <input type="password" id="set-password" name="set-password">
+                    </div>
+                    <div class="split">
+
+                    <label for="surname"> Surname: </label>
                     <input type="text" id="surname">
+
+                    <label for="phonenumber"> Phone Number: </label>
+                    <input type="number" id="phonenumber">
+
+                    <label for="confirm-password"> Confirm Password: </label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                    </div>
                 </form>
-                </div>
-            </div> 
-        <div>
+                <div class="submit"><button>Submit</button></div>
+            <p>Already have an account? Sign in</p>
+           </div> 
+
     </div>
 </body>
 </html>
