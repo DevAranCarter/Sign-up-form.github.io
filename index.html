@@ -4,45 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,200&display=swap" rel="stylesheet">
     <title>Sign up form</title>
 </head>
 <body>
     <div class="main">
         <div class="left-side">
+            <div class="logo" > <h1>This Logo<h1></div>
             <img class="img" src="./Resources/signUp.jpg">
         </div>
         <div class="right-side">
-            <div class="heading">
+            <div class="text-content">
             <h1 class="title">Welcome to sdskdj</h1>
+            <h3>Some additional content about stuff and things because yeah this is a test to see how things are laid out</h3>
             </div>
 
                 <form class="form">
-                    <div class="split">
-                    <label for="first_name"> First Name: </label>
-                    <input type="text" id="first_name">
+                    <div class="split" id="split1">
+                    <label for="first_name"> FIRST NAME: </label>
+                    <input type="text" id="first_name" required>
 
-                    <label for="email"> Email: </label>
-                    <input type="email" id="email">
+                    <label for="email"> EMAIL: </label>
+                    <input type="email" id="email" required>
 
-                    <label for="set-password"> Password: </label>
-                    <input type="password" id="set-password" name="set-password">
+                    <label for="set-password"> PASSWORD: </label>
+                    <input type="password" minlength="8" maxlength="20" name="set-password" id="set-password" required>
                     </div>
-                    <div class="split">
+                    <div class="split" id="split2">
 
-                    <label for="surname"> Surname: </label>
-                    <input type="text" id="surname">
+                    <label for="surname"> SURNAME: </label>
+                    <input type="text" id="surname" required>
 
-                    <label for="phonenumber"> Phone Number: </label>
-                    <input type="number" id="phonenumber">
+                    <label for="phonenumber"> PHONE NUMBER: </label>
+                    <input type="tel" id="phonenumber" required>
 
-                    <label for="confirm-password"> Confirm Password: </label>
-                    <input type="password" id="confirm-password" name="confirm-password">
+                    <label for="confirm-password"> CONFIRM PASSOWRD: </label>
+                    <input type="password"  minlength="8" maxlength="20" name="confirm-password" id="confirm-password" required>
+
+                    <input type="submit" id="submit" value="Submit">
                     </div>
+
                 </form>
-                <div class="submit"><button>Submit</button></div>
-            <p>Already have an account? Sign in</p>
+            <p>Already have an account? <a class="link" href=index.html> Sign in</p>
            </div> 
 
     </div>
+     <script type="text/javascript" src="content.js"></script>
 </body>
 </html>
