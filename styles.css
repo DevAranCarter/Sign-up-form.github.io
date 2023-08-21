@@ -39,6 +39,9 @@ body {
   background-color: grey;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 div > .logo {
@@ -49,15 +52,9 @@ div > .logo {
 }
 
 .logo > img {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   right: 70vh;
-}
-
-#banner-img > h1 {
-  color: white;
-  display: flex;
-  justify-content: center;
 }
 
 .right-side {
@@ -98,6 +95,20 @@ label {
 input {
   width: 170px;
   border-radius: 10px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid + span::before {
+  content: "✖";
+  color: red;
+}
+
+input:valid + span::before {
+  content: "✓";
+  color: green;
 }
 
 #submit {
