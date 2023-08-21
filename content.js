@@ -1,4 +1,3 @@
-console.log("hi");
 let password = document.getElementById("set-password");
 let confirmPassword = document.getElementById("confirm-password");
 let invalidPassword = document.getElementById("invalid-passwords");
@@ -19,10 +18,12 @@ submit.addEventListener("click", validatePassword);
 //}
 //});
 
-function validatePassword() {
+function validatePassword(event) {
   let value = document.getElementById("set-password").value;
   let connfirmVal = document.getElementById("confirm-password").value;
   if (value != connfirmVal) {
-    invalidPassword.textContent = "Passwords must match";
+    submit.onsubmit = event.preventDefault();
+    invalidPassword.style.color = "red";
+    invalidPassword.textContent = "* Passwords must match";
   }
 }
